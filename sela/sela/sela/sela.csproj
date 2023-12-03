@@ -1,0 +1,260 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F9460FD3-F377-4F45-810A-9F181396E04D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>sela</RootNamespace>
+    <AssemblyName>sela</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>sela.ico</ApplicationIcon>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ADD_city.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_city.Designer.cs">
+      <DependentUpon>ADD_city.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_clinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_clinet.Designer.cs">
+      <DependentUpon>Add_clinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ADD_driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ADD_driver.Designer.cs">
+      <DependentUpon>ADD_driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Add_shipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Add_shipment.Designer.cs">
+      <DependentUpon>Add_shipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_clinet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_clinet.Designer.cs">
+      <DependentUpon>edit_clinet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_shipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_shipment.Designer.cs">
+      <DependentUpon>edit_shipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="edit_state_shipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="edit_state_shipment.Designer.cs">
+      <DependentUpon>edit_state_shipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="home.Designer.cs">
+      <DependentUpon>home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form2.Designer.cs">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form3.Designer.cs">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form4.Designer.cs">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="search_shipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="search_shipment.Designer.cs">
+      <DependentUpon>search_shipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="shipment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="shipment.Designer.cs">
+      <DependentUpon>shipment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sort.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sort.Designer.cs">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </Compile>
+    <Compile Include="view_record_cliney.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="view_record_cliney.Designer.cs">
+      <DependentUpon>view_record_cliney.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="ADD_city.resx">
+      <DependentUpon>ADD_city.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_clinet.resx">
+      <DependentUpon>Add_clinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ADD_driver.resx">
+      <DependentUpon>ADD_driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Add_shipment.resx">
+      <DependentUpon>Add_shipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_clinet.resx">
+      <DependentUpon>edit_clinet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_shipment.resx">
+      <DependentUpon>edit_shipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="edit_state_shipment.resx">
+      <DependentUpon>edit_state_shipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="home.resx">
+      <DependentUpon>home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form2.resx">
+      <DependentUpon>Form2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form4.resx">
+      <DependentUpon>Form4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="search_shipment.resx">
+      <DependentUpon>search_shipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="shipment.resx">
+      <DependentUpon>shipment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sort.resx">
+      <DependentUpon>Sort.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="view_record_cliney.resx">
+      <DependentUpon>view_record_cliney.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\arrow.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-Add_user_icon_%28blue%29.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_011918-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_014619-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة الشاشة 2022-05-28 033333.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-28_033333-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sela.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_232311-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_232311-removebg-preview %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_233557-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-30_233848-removebg-preview %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\لقطة_الشاشة_2022-05-31_034508-removebg-preview.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="sela.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
